@@ -36,8 +36,8 @@ var genkeys = function(additional_entropy, lang) {
 var genturticon = function(address) {
   document.getElementById("identicon_widget").innerHTML = "";
   var icon = document.createElement("canvas");
-  icon.width = 128;
-  icon.height = 128;
+  icon.width = 256;
+  icon.height = 256;
   icon.setAttribute("data-jdenticon-value", address);
   document.getElementById("identicon_widget").appendChild(icon);
   jdenticon.update(icon);
